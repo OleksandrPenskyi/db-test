@@ -1,0 +1,29 @@
+{
+  "user": [
+    {
+      "id": "bf3dba7a-3b49-449f-aacb-d15464627c78",
+      "name": "Alexandr",
+      "age": 31
+    },
+    {
+      "id": "de165b45-0be3-4844-bea6-1c85131c8969",
+      "name": "Antoha",
+      "age": "21"
+    },
+    {
+      "id": "2cd8b8a4-df87-4581-a44a-f50698306bed",
+      "name": "Los'",
+      "age": "54"
+    },
+    {
+      "id": "db87214e-bff9-4ea2-9df5-5db994a56824",
+      "name": "lohara",
+      "age": "23"
+    },
+    {
+      "id": "237b21ae-e6ac-4ec8-91c2-d40840c9c3e7",
+      "name": "dsf",
+      "age": "5463"
+    }
+  ]
+}
