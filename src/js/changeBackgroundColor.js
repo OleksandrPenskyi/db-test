@@ -2,7 +2,7 @@ import { userListRef } from './refs';
 
 function changeBackgroundColor() {
   userListRef.children.forEach(item => {
-    item.style.backgroundColor = `rgb(${randomNumber()},${randomNumber()},${randomNumber()})`;
+    item.style.border = `1px solid rgb(${randomNumber()},${randomNumber()},${randomNumber()})`;
   });
 }
 
