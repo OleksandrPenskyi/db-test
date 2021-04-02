@@ -1,0 +1,102 @@
+{{#each this}}
+
+<div class="col-md-7 col-lg-10 company-page-div">
+    <h2 class="mb-3 page-title">Do you want to add or change company's DATA? It's easy! Try it!</h2>
+
+    <div class="page-wrapper">
+        <aside class="col-5">
+            <div class="d-flex flex-column p-3 bg-light" style="width: 380px;">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4 text-center">{{name}}</span>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+
+                    <li>
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#speedometer2"></use>
+                        </svg>
+                        Count of employees: <b>{{countOfEmployees}}</b>
+                    </li>
+                    <li>
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#table"></use>
+                        </svg>
+                        Email: <b>{{email}}</b>
+                    </li>
+                    <li>
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#grid"></use>
+                        </svg>
+                        Web-site: <b>{{website}}</b>
+                    </li>
+                    <li>
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        Country: <b>{{country}}</b>
+
+                    </li>
+                </ul>
+                <hr>
+
+            </div>
+        </aside>
+
+        <form class="needs-validation col" novalidate="">
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="companyName" class="form-label">Company's name</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid Company's name is required.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="countOfEmpoyees" class="form-label">Count of employees</label>
+                    <input type="Number" class="form-control" id="countOfEmpoyees" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid Count of empoyees is required.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="webSite" class="form-label">Web-site</label>
+                    <input type="url" class="form-control" id="webSite" placeholder="https://developer.mozilla.org/"
+                        required="">
+                    <div class="invalid-feedback">
+                        Please enter your Web-site address.
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required="">
+                        <option value="">Choose...</option>
+                        <option>Ukraine</option>
+                        <option>Belarus</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg changeDataBtn" type="submit">Change DATA</button>
+            <a class="w-100 btn btn-primary btn-lg leaveBtn" href="http://localhost:4040/">Leave without saving</a>
+        </form>
+    </div>
+</div>
+{{/each}}

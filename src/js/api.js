@@ -4,27 +4,27 @@ import { v4 } from 'uuid';
 axios.defaults.baseURL = 'http://localhost:3000/user';
 
 export default {
-  async post(name, age) {
+  async post(
+    name,
+    country,
+    countOfEmployees = '0',
+    email = 'none',
+    website = 'none',
+  ) {
     const headers = {
       id: v4(),
-      name: name,
-      age: age,
+      name,
+      country,
+      countOfEmployees,
+      email,
+      website,
     };
-    const { data } = await axios.post('', headers);
+
+    const response = await axios.post('', headers);
+    const data = [...response.data]; // возврат массива. Из-за того что наш шаблон ожидает массив (чисто чтобы не менять массив)
+    console.log(data);
     return data;
   },
-
-  // async patch(nnpame, age) {
-  //     const headers = {
-  //         id: v4(),
-  //         name: name,
-  //         age: age
-  //     }
-  //     const { data } = await axios.post('', headers);
-  //     console.log(data);
-  //     return data
-
-  // },
 
   async deleteUser(id) {
     await axios.delete(`/${id}`);
@@ -32,12 +32,13 @@ export default {
 
   async getAllUsers() {
     const { data } = await axios.get('');
+
     return data;
   },
 
   async getUserById(id) {
-    const { data } = await axios.get(`/${id}`);
-    console.log(data);
+    const response = await axios.get(`/${id}`);
+    const data = [...response.data]; // возврат массива. Из-за того что наш шаблон ожидает массив (чисто чтобы не менять массив)
     return data;
   },
 };

@@ -1,9 +1,28 @@
 {
   "user": [
     {
-      "id": "c7275734-87a2-4501-8252-e436edbdcddc",
-      "name": "test",
-      "age": "21"
+      "id": "290759be-2a6a-485b-8591-164f30e181b8",
+      "name": "\"AVTEK\" LTD",
+      "country": "Ukraine",
+      "countOfEmployees": "0",
+      "email": "none",
+      "website": "none"
+    },
+    {
+      "id": "8b0048bc-b001-4803-a26c-3deeb88fc7bc",
+      "name": "\"MAZTRANSSERVICE\" LTD",
+      "country": "Ukraine",
+      "countOfEmployees": "0",
+      "email": "none",
+      "website": "none"
+    },
+    {
+      "id": "dfcf5d1c-99de-4745-b353-9ff62c76c275",
+      "name": "\"AvtoMAZ\"",
+      "country": "Ukraine",
+      "countOfEmployees": "0",
+      "email": "none",
+      "website": "none"
     }
   ]
 }

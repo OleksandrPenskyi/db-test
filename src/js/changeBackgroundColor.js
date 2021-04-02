@@ -1,7 +1,7 @@
-import { userListRef } from './refs';
+const userListRef = document.querySelector('#userList-item');
 
 function changeBackgroundColor() {
-  userListRef.children.forEach(item => {
+  userListRef.forEach(item => {
     item.style.border = `1px solid rgb(${randomNumber()},${randomNumber()},${randomNumber()})`;
   });
 }
