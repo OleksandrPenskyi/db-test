@@ -3,6 +3,7 @@ import allUsers from './templates/userList.hbs';
 import renderMainPage from './js/render-main-page'; // рендерим разметку основной страницы
 import renderDatabaseData from './js/render-DB-data'; // рендерим разметку всего в DOM всего, что содержится в db.json
 import renderCompanyPage from './js/render-company-page'; // рендерим страницу компании для изменений
+import notification from './js/notifications';
 
 import './styles.scss'; // импорт стилей
 
@@ -36,6 +37,7 @@ async function getInputValue(event) {
   const result = await api.post(companyName, country);
   const markup = allUsers(result);
   userListRef.insertAdjacentHTML('beforeend', markup);
+  notification.created();
 }
 
 /*

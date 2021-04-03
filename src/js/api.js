@@ -26,6 +26,10 @@ export default {
     return data;
   },
 
+  async patch(id, object) {
+    await axios.patch(`/${id}`, object);
+  },
+
   async deleteUser(id) {
     await axios.delete(`/${id}`);
   },

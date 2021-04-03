@@ -1,24 +1,16 @@
 {
   "user": [
     {
-      "id": "290759be-2a6a-485b-8591-164f30e181b8",
-      "name": "\"AVTEK\" LTD",
-      "country": "Ukraine",
-      "countOfEmployees": "0",
-      "email": "none",
-      "website": "none"
+      "id": "e443d984-14c2-4807-ab3a-74e58ff4d680",
+      "name": "\"AVTEK\" ",
+      "country": "Belarus",
+      "countOfEmployees": "3",
+      "email": "sucha@gmail.com",
+      "website": "avtomaz.com.ua"
     },
     {
-      "id": "8b0048bc-b001-4803-a26c-3deeb88fc7bc",
-      "name": "\"MAZTRANSSERVICE\" LTD",
-      "country": "Ukraine",
-      "countOfEmployees": "0",
-      "email": "none",
-      "website": "none"
-    },
-    {
-      "id": "dfcf5d1c-99de-4745-b353-9ff62c76c275",
-      "name": "\"AvtoMAZ\"",
+      "id": "9cc205c3-8da9-4dab-8acc-a1f8deff3424",
+      "name": "\"AvtoMAZ\" LTD",
       "country": "Ukraine",
       "countOfEmployees": "0",
       "email": "none",
