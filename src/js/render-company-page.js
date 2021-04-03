@@ -58,6 +58,9 @@ async function renderCompanyPage(id) {
         countryTableRef.textContent = data[0].country;
       })
       .then(() => {
+        companyFormRef.reset();
+      })
+      .then(() => {
         // нотификация об успешном изменении даных
         notification.changed();
       });
